@@ -103,13 +103,43 @@ main > article.grid {
 }
 
 .profilePics{
-    -webkit-filter: grayscale(100%); /*works in other browser formats*/
-    Filter:grayscale(100%);
+    -webkit-filter: inherit; /*works in other browser formats*/
+    Filter:inherit;
     
 }
 
-.profilePics:hover{
+/*.profilePics:hover{
     -webkit-filter: grayscale(0%);
     Filter:grayscale(0%);
     transition: 1s;
+}*/
+
+.teamProfiles{
+    Filter:grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.teamProfiles:hover{
+    -webkit-filter: grayscale(0%);
+    Filter:grayscale(0%);
+}
+
+footer{
+    height: 3em;
+    background: #005BAB;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.socialIcons{
+    height:50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.socialIcons:hover{
+    transform: scale(1.2);/*20% increase*/
+    transition: .2s;
+    
 }
