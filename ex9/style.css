@@ -136,10 +136,11 @@ footer{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    transition: translate .2s;
 }
 
 .socialIcons:hover{
-    transform: scale(1.2);/*20% increase*/
-    transition: .2s;
+    transform: translateY(-50%) scale(1.2);/*20% increase*/
+     
     
 }
